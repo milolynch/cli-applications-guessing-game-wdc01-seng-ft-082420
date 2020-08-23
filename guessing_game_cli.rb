@@ -1,7 +1,7 @@
 # Code your solution here!
 def run_guessing_game
   num = rand(6)+1
-  puts "enter a number between 1-6"
+  prompt
   input = gets.chomp
   if input.to_i == num
     puts "You guessed the correct number!"
@@ -10,4 +10,8 @@ def run_guessing_game
   else
     puts "Goodbye!"
   end
+end
+
+def prompt
+  puts "enter a number between 1-6"
 end
